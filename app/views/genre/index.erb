@@ -1,0 +1,5 @@
+<h1>This is the index for Genres</h1> 
+<% @genres.each do |genre| %>
+  <%= genre.name %>
+  <a href="/genres/<%= genre.slug %>">show</a>
+<% end %>
